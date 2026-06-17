@@ -7,6 +7,7 @@ terraform {
     region       = "ap-southeast-2"
     encrypt      = true
     use_lockfile = true
+    profile      = "chris-yfinance-pipeline"
   }
 
   required_providers {
@@ -18,6 +19,6 @@ terraform {
 }
 
 provider "aws" {
-  region = "ap-southeast-6"
+  region = "ap-southeast-2"
   profile = "chris-yfinance-pipeline"
 }

@@ -13,8 +13,12 @@ variable "environment" {
   }
 }
 
-variable "aws_region" {
-  description = "AWS region where resources will be deployed."
+variable "layer" {
+  description = "Data lake layer (e.g. bronze, silver, gold)."
   type        = string
-  default     = "ap-southeast-2"
+
+  validation {
+    condition     = contains(["bronze", "silver", "gold"], var.layer)
+    error_message = "Layer must be one of: bronze, silver, gold."
+  }
 }
