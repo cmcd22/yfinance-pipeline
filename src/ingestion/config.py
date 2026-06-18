@@ -1,0 +1,33 @@
+tickers = ["COST", "HSY", "KHC", "PEP", "WMT", "CVX", "XOM", "HAL", "OKE", 
+           "WMB", "BIIB", "CI", "JNJ", "PFE", "MDT", "BA", "FDX", "LMT", 
+           "HON", "UPS", "HPQ", "IBM", "INTC", "NVDA", "QCOM"]
+sectors = ["Consumer Staples", "Energy", "Health Care", "Industrials",
+           "Information Technology"]
+
+ticker_sector_dict = {
+    "COST": "Consumer Staples",
+    "HSY": "Consumer Staples",
+    "KHC": "Consumer Staples",
+    "PEP": "Consumer Staples",
+    "WMT": "Consumer Staples",
+    "CVX": "Energy",
+    "XOM": "Energy",
+    "HAL": "Energy",
+    "OKE": "Energy",
+    "WMB": "Energy",
+    "BIIB": "Health Care",
+    "CI": "Health Care",
+    "JNJ": "Health Care",
+    "PFE": "Health Care",
+    "MDT": "Health Care",
+    "BA": "Industrials",
+    "FDX": "Industrials",
+    "LMT": "Industrials",
+    "HON": "Industrials",
+    "UPS": "Industrials",
+    "HPQ": "Information Technology",
+    "IBM": "Information Technology",
+    "INTC": "Information Technology",
+    "NVDA": "Information Technology",
+    "QCOM": "Information Technology",
+}
