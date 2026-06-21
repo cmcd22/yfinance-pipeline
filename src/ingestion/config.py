@@ -1,5 +1,5 @@
-tickers = ["COST", "HSY", "KHC", "PEP", "WMT", "CVX", "XOM", "HAL", "OKE", 
-           "WMB", "BIIB", "CI", "JNJ", "PFE", "MDT", "BA", "FDX", "LMT", 
+tickers = ["COST", "HSY", "KHC", "PEP", "WMT", "CVX", "XOM", "HAL", "OKE",
+           "WMB", "BIIB", "CI", "JNJ", "PFE", "MDT", "BA", "FDX", "LMT",
            "HON", "UPS", "HPQ", "IBM", "INTC", "NVDA", "QCOM"]
 sectors = ["Consumer Staples", "Energy", "Health Care", "Industrials",
            "Information Technology"]
