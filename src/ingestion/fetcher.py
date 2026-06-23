@@ -1,7 +1,8 @@
 import s3_client
 import yfinance as yf
+import os
 
-bucket = "yfinance-pipeline-bronze-dev"
+bucket = os.environ["BRONZE_BUCKET"]
 
 
 def fetch_data(ticker):
