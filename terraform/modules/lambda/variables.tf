@@ -43,6 +43,11 @@ variable "layer_path" {
     type        = string
 }
 
+variable "shared_code_path" {
+  description = "Path to the shared source code directory."
+  type        = string
+}
+
 variable "project_name" {
   description = "The name of the project."
   type        = string

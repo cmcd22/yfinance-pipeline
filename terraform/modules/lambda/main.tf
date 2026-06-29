@@ -1,7 +1,23 @@
 data "archive_file" "lambda_zip" {
   type        = "zip"
-  source_dir = var.source_code_path
   output_path = "${path.root}/builds/lambda.zip"
+
+  source {
+    content  = file("${var.source_code_path}/handler.py")
+    filename = "handler.py"
+  }
+  source {
+    content  = file("${var.source_code_path}/fetcher.py")
+    filename = "fetcher.py"
+  }
+  source {
+    content  = file("${var.source_code_path}/s3_client.py")
+    filename = "s3_client.py"
+  }
+  source {
+    content  = file("${var.shared_code_path}/config.py")
+    filename = "config.py"
+  }
 }
 
 data "archive_file" "layer_zip" {

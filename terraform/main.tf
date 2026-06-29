@@ -24,6 +24,7 @@ module "lambda" {
     project_name = var.project_name
     environment = var.environment
     source_code_path = "../src/ingestion"
+    shared_code_path = "../src/shared"
     layer_path = "../lambda_layer"
     runtime = "python3.12"
     timeout = 300
