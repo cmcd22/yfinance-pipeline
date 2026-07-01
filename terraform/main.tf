@@ -35,3 +35,19 @@ module "lambda" {
     }
     lambda_assets_bucket = "chris-yfinance-pipeline-tf-state-381492137321-ap-southeast-2-an"
 }
+
+module "glue" {
+    source = "./modules/glue"
+    project_name = var.project_name
+    environment = var.environment
+    shared_code_path = "../src/shared"
+    bronze_bucket_arn = module.bronze.bucket_arn
+    silver_bucket_arn = module.silver.bucket_arn
+    gold_bucket_arn = module.gold.bucket_arn
+    bronze_bucket_name = module.bronze.bucket_name
+    silver_bucket_name = module.silver.bucket_name
+    gold_bucket_name = module.gold.bucket_name
+    silver_script_path = "../src/transformation/silver_transform.py"
+    gold_script_path = "../src/aggregation/gold_aggregate.py"
+    glue_assets_bucket = "chris-yfinance-pipeline-tf-state-381492137321-ap-southeast-2-an"
+}
